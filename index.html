@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <title>PostIt</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PostIt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header" id="header">
-        <nav class="header_inside">
-            <div>
-                <img src="res/images/logo.png" alt="logo">
-            </div>
-            <div class="search-container">
-                <input type="text"><button>Search</button>
-            </div>
-            <div>
-                <img src="res/images/me.png" alt="icon">
-            </div>
-        </nav>
+      <nav class="header_inside">
+        <div>
+          <img src="res/images/logo.png" alt="logo" />
+        </div>
+        <div class="search-container">
+          <input type="text" /><button>Search</button>
+        </div>
+        <div>
+          <img src="res/images/me.png" alt="icon" />
+        </div>
+      </nav>
     </header>
 
-    <div id = "posts_container">
-        <!-- first post -->
-        <div class="post">
-            <div class= "post_header">
-                <div>
-                    <img src="res/images/me.png" alt="icon">
-                </div>
-                <div class="dateTime">
-                    <p>sep 18, 2020 15:16</p>
-                </div>
-            </div>
-            <div class="picture">
-                <img src = "res/images/post1.jpg" alt="thunderstorm">
-            </div>
-            <div class = "post_text">
-                <p>I think it's going to rain</p>
-            </div>
-            <div class = "post_bottom">
-                <button>
-                    <img src = "res/images/likebutton.png" alt="like_button">
-                </button>
-            </div>
+    <div id="posts_container">
+      <!-- first post -->
+      <div class="post">
+        <div class="post_header">
+          <div class="icon">
+            <img src="res/images/me.png" alt="icon" />
+          </div>
+          <div class="dateTime">
+            <p>sep 18, 2020 15:16</p>
+          </div>
         </div>
+        <div class="picture">
+          <img src="res/images/post1.jpg" alt="thunderstorm" />
+        </div>
+        <div class="post_text">
+          <p>I think it's going to rain</p>
+        </div>
+        <div class="post_bottom">
+          <button>
+            <img src="res/images/likebutton.png" alt="like_button" />
+          </button>
+        </div>
+      </div>
 
-        <!-- second post -->
-        <div class="post">
-            <div class= "post_header">
-                <div>
-                    <img src="res/images/me.png" alt="icon">
-                </div>
-                <div class="dateTime">
-                    <p>sep 18, 2020 12:34</p>
-                </div>
-                <div class = "post_text">
-                    <p>Which weighs more, a pound of feather or a pound of bricks?</p>
-                </div>
-                <div class = "post_bottom">
-                    <button>
-                        <img src = "res/images/likebutton.png" alt="like_button">
-                    </button>
-                </div>
-            </div>
-
+      <!-- second post -->
+      <div class="post">
+        <div class="post_header">
+          <div class="icon">
+            <img src="res/images/me.png" alt="icon" />
+          </div>
+          <div class="dateTime">
+            <p>sep 18, 2020 12:34</p>
+          </div>
         </div>
-        <!-- third post -->
-        <div class="post">
-            <div class= "post_header">
-                <div>
-                    <img src="res/images/me.png" alt="icon">
-                </div>
-                <div class="dateTime">
-                    <p>sep 17, 2020 19:45</p>
-                </div>
-            </div>
-            <div class="picture">
-                <img src = "res/images/post3.jpg" alt="Dog">
-            </div>
-            <div class = "post_text">
-                <p>How cute is that!!!</p>
-            </div>
-            <div class = "post_bottom">
-                <button>
-                    <img src = "res/images/likebutton.png" alt="like_button">
-                </button>
-            </div>
+        <div class="post_text">
+          <p>Which weighs more, a pound of feather or a pound of bricks?</p>
         </div>
-        <!-- fourth post -->
-        <div class="post">
-            <div class= "post_header">
-                <div>
-                    <img src="res/images/me.png" alt="icon">
-                </div>
-                <div class="dateTime">
-                    <p>sep 16, 2020 02:55</p>
-                </div>
-                <div class = "post_text">
-                    <p>"The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking."
-                        <br>― Albert Einstein
-                    </p>
-                </div>
-                <div class = "post_bottom">
-                    <button>
-                        <img src = "res/images/likebutton.png" alt="like_button">
-                    </button>
-                </div>
-            </div>
+        <div class="post_bottom">
+          <button>
+            <img src="res/images/likebutton.png" alt="like_button" />
+          </button>
         </div>
+      </div>
+      <!-- third post -->
+      <div class="post">
+        <div class="post_header">
+          <div class="icon">
+            <img src="res/images/me.png" alt="icon" />
+          </div>
+          <div class="dateTime">
+            <p>sep 17, 2020 19:45</p>
+          </div>
+        </div>
+        <div class="picture">
+          <img src="res/images/post3.jpg" alt="Dog" />
+        </div>
+        <div class="post_text">
+          <p>How cute is that!!!</p>
+        </div>
+        <div class="post_bottom">
+          <button>
+            <img src="res/images/likebutton.png" alt="like_button" />
+          </button>
+        </div>
+      </div>
+      <!-- fourth post -->
+      <div class="post">
+        <div class="post_header">
+          <div class="icon">
+            <img src="res/images/me.png" alt="icon" />
+          </div>
+          <div class="dateTime">
+            <p>sep 16, 2020 02:55</p>
+          </div>
+        </div>
+        <div class="post_text">
+          <p>
+            "The world as we have created it is a process of our thinking. It
+            cannot be changed without changing our thinking." <br />― Albert
+            Einstein
+          </p>
+        </div>
+        <div class="post_bottom">
+          <button>
+            <img src="res/images/likebutton.png" alt="like_button" />
+          </button>
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
