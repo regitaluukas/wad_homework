@@ -39,16 +39,13 @@ $(function(){
             let button = $('<button>');
             let buttonImg =  post.Button.url;
 
-            //button.append(buttonImg);
             
-            //authorIcon.append(authorIconUrl);
             divauthorName.append(name);
             divdatetime.append(datetime);
 
             divauthorIcon.append('<img src="' + iconUrl + '" alt="Author">');
             divPicture.append('<img src="' + picture + '" alt="Post image">');
             divPostText.append(postText)
-            //divPostBottom.append('<img src="' + buttonImg + '" alt="Post image">');
             button.append('<img src="' + buttonImg + '" alt="Post image">');
             divPostBottom.append(button)
             
