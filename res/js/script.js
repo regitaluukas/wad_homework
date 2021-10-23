@@ -30,6 +30,7 @@ $(function(){
             let divPostText = $('<div class="post_text">');
             let divPostBottom = $('<div class="post_bottom">');
 
+
             let iconUrl = post.author.iconurl;
             let name = $('<p>').text(post.author.name);
             let datetime = $('<p>').text(post.datetime);
@@ -43,6 +44,7 @@ $(function(){
             //authorIcon.append(authorIconUrl);
             divauthorName.append(name);
             divdatetime.append(datetime);
+
             divauthorIcon.append('<img src="' + iconUrl + '" alt="Author">');
             divPicture.append('<img src="' + picture + '" alt="Post image">');
             divPostText.append(postText)
