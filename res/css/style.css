@@ -104,6 +104,10 @@ h3 ~ form input {
   justify-content: space-between;
 }
 
+.post .post_header .dateTime {
+  flex-grow: 4;
+}
+
 .post .post_header .icon img {
   width: 30px;
   height: 30px;
