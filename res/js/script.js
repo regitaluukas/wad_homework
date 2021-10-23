@@ -30,24 +30,25 @@ $(function(){
             let divPostText = $('<div class="post_text">');
             let divPostBottom = $('<div class="post_bottom">');
 
-            let iconUrl = $('<p>').text(post.author.iconurl);
-            //let authorIconUrl = $('<img src ='+text(post.author.iconurl)+' alt = '+text(post.author.icontype)+"/>");
+
+            let iconUrl = post.author.iconurl;
             let name = $('<p>').text(post.author.name);
             let datetime = $('<p>').text(post.datetime);
-            let picture =  $('<p>').text(post.photo.url)
+            let picture =  post.photo.url;
             let postText = $('<p>').text(post.text);
             let button = $('<button>');
-            let buttonImg =  $('<p>').text(post.author.iconurl);
+            let buttonImg =  post.Button.url;
 
             button.append(buttonImg);
             
             //authorIcon.append(authorIconUrl);
             divauthorName.append(name);
             divdatetime.append(datetime);
-            divauthorIcon.append(iconUrl);
-            divPicture.append(picture);
+
+            divauthorIcon.append('<img src="' + iconUrl + '" alt="Author">');
+            divPicture.append('<img src="' + picture + '" alt="Post image">');
             divPostText.append(postText)
-            divPostBottom.append(button);
+            divPostBottom.append('<img src="' + buttonImg + '" alt="Post image">');
             
             divHeader.append(divauthorIcon);
             divHeader.append(divauthorName);
