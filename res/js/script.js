@@ -1,6 +1,6 @@
 $(function(){
     // $.get("https://private-8275d-wad21posts1.apiary-mock.com/posts", function(posts){
-    $.get("res/json/posts.json", function(posts){
+    $.getJSON("res/json/posts.json", function(posts){
         let divPostContainer = $('<div id="posts_container">');
         for (post of posts){
             //console.log("hello")
@@ -48,4 +48,10 @@ $(function(){
         }
         $('body').append(divPostContainer);
     })
+});
+
+$(function() {
+    $("#dropimg").click(function(){
+        $("#myDropdown").toggle();
+    });
 });
